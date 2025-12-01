@@ -1,76 +1,58 @@
-// class Siswa {
-//     namaSekolah="SD Negeri 1";
-//     constructor(nama) {
-//         console.log(`inisialisasi data ${nama}`);
-//         this._nama = nama;
-//     };
-//     halo() {
-//         document.write(`Halo nama saya ${this.nama} dari sekolah ${this.namaSekolah}`);
-//     }
-//     get nama(){
-//         let namabaru;
-//         namabaru = this._nama.toUpperCase();
-//         return namabaru;
-//     }
-//     set nama(value) {
-//         if (value.length < 3) {
-//             alert('Silahkan masukkan nama');
-//             return;
-//         }
-//         this._nama = value;
-//     }
+// let usia = 30
+// usia = 35
+// console.log('hayo usia kamu adalah' + usia)
+
+// let usia = prompt('Berapa usia kamu?')
+// alert(`usia anda adalah ${usia}`)
+
+// let nama = 'Nopal'
+// let usia = 20
+// let tinggiBadan = 173.5
+// let beratBadan
+// let pacar = null
+
+// let saldoAwal = 50000
+// let saldoTambahan = 80000
+// const saldoAkhir = saldoAwal + saldoTambahan
+
+// beratBadan = 60
+// if (pacar == null) {
+//     pacar = 'Belum ada' 
+// } else {
+//     pacar = 'Udah ada'
 // }
 
-// let teman1 = new Siswa('tono');
-// teman1.nama = 'budi';
-// document.write(`Nama siswa: ${teman1.nama}`)
+// alert(
+//     `nama saya adalah ${nama} usia saya ${usia} tinggi badan ${tinggiBadan} berat badan ${beratBadan} dan pacar saya ${pacar}`
+// )
 
-// class Hewan {
-//     static tempatHidup = 'darat';
-//     constructor(nama) {
-//         this.nama = nama;
-//     }
-//     jalan() {
-//         document.write(`${this.nama} berjalan`);
-//     }
-//     static berhenti(){
-//         document.write(`Hewan berhenti`);
-//     }
+// alert(
+//     `saldo awal saya sebesar Rp ${saldoAwal} di tambah Rp ${saldoAkhir} jadi ${saldoAkhir}`
+// )
+
+// let namaGuru = ['Jodi', 'bunga', 'Rahman']
+// namaGuru.shift()
+// namaGuru.pop()
+// alert(namaGuru)
+
+const namaGuru = ['dea', 'Fikri', 'retno', 'bunga']
+console.log(namaGuru.length)
+
+// for (let index = 1; index <= 10; index = index + 1) {
+//     console.log('nama saya adalah ')
 // }
 
-// class Burung extends Hewan {
-//     constructor(nama,warna){
-//         super(nama);
-//         this.warna = warna;
-//     }
-//     terbang() {
-//         document.write(`${this.nama} Terbang`);
-//     }
-//     jalan() {
-//         // super.jalan();
-//         // document.write('<br>');
-//         document.write(`${this.nama} ${this.warna} berjalan 2 <br>`);
-//         // this.terbang();
-//     }
+// for (let i = 0; i < namaGuru.length; i++) {
+//     console.log(namaGuru[i])
 // }
-// // let gajah = new Hewan('Gajah');
-// Hewan.berhenti();
 
-class Counter {
-    #count = 0;
-    #increment() {
-        return this.#count++;
-    }
-    getIncrement(){
-        this.#increment();
-    }
-    getCount() {
-        return this.#count;
-    }
-}
+let i = 10
+// while (i < 10){
+//     i++
+//     console.log('Dea')
+// }
 
-let counter = new Counter();
-counter.getIncrement();
-counter.getIncrement();
-counter.count = 1000;
-document.write(`count berisi ${counter.getCount()}`);
+do {
+    i++
+    console.log('Dea')
+} while (i < 10)
